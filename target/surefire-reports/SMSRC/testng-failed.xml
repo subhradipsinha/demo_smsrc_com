@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SMSRC]">
+  <test thread-count="5" verbose="0" name="SMSRC_TestCase1(failed)">
+    <classes>
+      <class name="com.TestCase.Patient_Profile_Age.category_brand_custom_TestCase">
+        <methods>
+          <include name="brand_custom_TestCase"/>
+        </methods>
+      </class> <!-- com.TestCase.Patient_Profile_Age.category_brand_custom_TestCase -->
+      <class name="com.TestCase.Categry_Mol.Categry_Mol_S_TestCase">
+        <methods>
+          <include name="Categry_Mol"/>
+        </methods>
+      </class> <!-- com.TestCase.Categry_Mol.Categry_Mol_S_TestCase -->
+      <class name="com.TestCase.Rpm_Report.Rpm_TestCase">
+        <methods>
+          <include name="details"/>
+        </methods>
+      </class> <!-- com.TestCase.Rpm_Report.Rpm_TestCase -->
+      <class name="com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase">
+        <methods>
+          <include name="details"/>
+        </methods>
+      </class> <!-- com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase -->
+    </classes>
+  </test> <!-- SMSRC_TestCase1(failed) -->
+</suite> <!-- Failed suite [SMSRC] -->

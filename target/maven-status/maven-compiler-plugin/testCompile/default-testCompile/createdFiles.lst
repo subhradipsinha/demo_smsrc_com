@@ -1,0 +1,15 @@
+com\PageObject\LoginPage\Login.class
+com\TestCase\Login\Login_TestCase.class
+com\PageObject\RXER_Profile_Age\RXER_Profile_Age_Brand.class
+com\PageObject\Patient_Profile_Age\category_brand_custom.class
+com\PageObject\RXER_Profile_Age\RXER_Profile_Age.class
+com\PageObject\RPM\Rpm.class
+com\TestCase\Rpm_Report\Rpm_TestCase.class
+com\PageObject\Sidepanel\Sidepanel_Report.class
+com\TestCase\Categry_Mol\Categry_Mol_S_TestCase.class
+com\TestCase\Patient_Profile_Age\Patient_Profile_Age_TestCase.class
+com\PageObject\Categry_Mol_S\Categry_Mol_S.class
+com\TestCase\RXER_Profile_Age_Report\RXER_Profile_Age_TestCase.class
+com\PageObject\Patient_Profile_Age\Patient_Profile_Age.class
+com\TestCase\Patient_Profile_Age\category_brand_custom_TestCase.class
+com\TestCase\Sidepanel\Sidepanel_TestCase.class

@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SMSRC">
+    <test name="SMSRC_TestCase1">
+        <classes>
+            <class name="com.TestCase.Login.Login_TestCase"></class>
+            <class name="com.TestCase.Patient_Profile_Age.Patient_Profile_Age_TestCase"></class>
+            <class name="com.TestCase.Patient_Profile_Age.category_brand_custom_TestCase"></class>
+            <class name="com.TestCase.Sidepanel.Sidepanel_TestCase"></class>
+            <class name="com.TestCase.Categry_Mol.Categry_Mol_S_TestCase"></class>
+            <class name="com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase"></class>
+            <class name="com.TestCase.Rpm_Report.Rpm_TestCase"></class>
+        </classes>
+    </test>
+</suite>

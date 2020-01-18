@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SMSRC]">
+  <test thread-count="5" name="SMSRC_TestCase1(failed)">
+    <classes>
+      <class name="com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase">
+        <methods>
+          <include name="details"/>
+        </methods>
+      </class> <!-- com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase -->
+      <class name="com.TestCase.Login.Login_TestCase">
+        <methods>
+          <include name="Without_Password"/>
+          <include name="Without_UserName"/>
+        </methods>
+      </class> <!-- com.TestCase.Login.Login_TestCase -->
+      <class name="com.TestCase.Rpm_Report.Rpm_TestCase">
+        <methods>
+          <include name="details"/>
+        </methods>
+      </class> <!-- com.TestCase.Rpm_Report.Rpm_TestCase -->
+    </classes>
+  </test> <!-- SMSRC_TestCase1(failed) -->
+</suite> <!-- Failed suite [SMSRC] -->
