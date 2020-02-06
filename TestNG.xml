@@ -4,12 +4,17 @@
     <test name="SMSRC_TestCase1">
         <classes>
             <class name="com.TestCase.Login.Login_TestCase"></class>
-            <class name="com.TestCase.Patient_Profile_Age.Patient_Profile_Age_TestCase"></class>
-            <class name="com.TestCase.Patient_Profile_Age.category_brand_custom_TestCase"></class>
-            <class name="com.TestCase.Sidepanel.Sidepanel_TestCase"></class>
-            <class name="com.TestCase.Categry_Mol.Categry_Mol_S_TestCase"></class>
+<!--            <class name="com.TestCase.Patient_Profile_Age.category_brand_custom_TestCase"></class>-->
+<!--            <class name="com.TestCase.Sidepanel.Sidepanel_TestCase"></class>-->
+<!--            <class name="com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1"></class>-->
+<!--            <class name="com.TestCase.Product_1_2_Report.Category_Company_Division_Report"></class>-->
+<!--            <class name="com.TestCase.Base_Per_Capita_Report.Category_Brand_to_Brand_Report"></class>-->
+<!--            <class name="com.TestCase.All_co_Rx_Report.Category_to_Category_Report"></class>-->
+<!--            <class name="com.TestCase.Core_Analysis.Top20_Brand_To_Brand_Report"></class>-->
+<!--            <class name="com.TestCase.Trends_Report.Trend_Contibution_category_molecule_brand_Report"></class>-->
             <class name="com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase"></class>
-            <class name="com.TestCase.Rpm_Report.Rpm_TestCase"></class>
+
+
         </classes>
     </test>
 </suite>

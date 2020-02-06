@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 public class category_brand_custom_TestCase {
     category_brand_custom categoryBrandCustom = new category_brand_custom();
-    @Test(priority = 7)
+    @Test(priority = 6)
     public void brand_custom_TestCase()throws Exception{
         categoryBrandCustom.brand_custom();
     }

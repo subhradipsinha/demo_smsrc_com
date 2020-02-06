@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -14,15 +15,15 @@ public class RXER_Profile_Age extends TestBase {
         Thread.sleep(5000);
 
         //SRP Tab Hit
-        TestBase.byXpath("SPR_Xpath").click();
+        TestBase.byXpath("SPR").click();
         Thread.sleep(5000);
         //RXER_Profile_Age Tab click
-        TestBase.byXpath("RXER_Profile_Age_Xpath").click();
+        TestBase.byXpath("RXER_Profile_Age_Tab_Hit").click();
         System.out.println("RXER_Profile_Age Tab click");
         Thread.sleep(5000);
 
         //Brand Hit
-        TestBase.byXpath("Brand_Xpath").click();
+        TestBase.byXpath("Brand_Tab_Hit").click();
         System.out.println("Brand Hit");
         Thread.sleep(5000);
 
@@ -40,9 +41,9 @@ public class RXER_Profile_Age extends TestBase {
 
         //Speciality choice
         TestBase.byXpath("Speciality").click();
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         //Choice component
-        TestBase.byXpath("CARDIO").click();
+        TestBase.byXpath("CHEST").click();
         System.out.println("CHEST click");
         Thread.sleep(5000);
 
@@ -50,31 +51,52 @@ public class RXER_Profile_Age extends TestBase {
         //Close_Speciality_window
         TestBase.byXpath("Speciality").click();
         System.out.println("Close_Speciality_window");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
 
         //Selection Period (Radio Button)
         TestBase.byXpath("QTR_Xpath").click();
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         System.out.println("Selection Period (Radio Button)");
-        Thread.sleep(3000);
-
-
-        //Selection Year  droupdown click
-        TestBase.byXpath("Selected_Year_Xpath").click();
-        System.out.println("Selection Period droupdown box click");
-        Thread.sleep(3000);
-
-
-        //Year Choice
-        TestBase.byXpath("Mar_June_2019").click();
-        System.out.println("Year Choice");
         Thread.sleep(5000);
 
 
-        //Close Year  droupdown click
+        //Selection Qtr  droupdown click
         TestBase.byXpath("Selected_Year_Xpath").click();
-        System.out.println("Close Year  droupdown click");
+        System.out.println("Selection Period droupdown box click");
+        Thread.sleep(5000);
+
+
+        //Qtr Choice
+        TestBase.byXpath("Mar_June_2019").click();
+        System.out.println("Qtr Choice");
+        Thread.sleep(5000);
+
+
+        //Close Qtr  droupdown click
+        TestBase.byXpath("Selected_Year_Xpath").click();
+        System.out.println("Close Qtr  droupdown click");
+        Thread.sleep(5000);
+
+
+
+        //Search Brand
+        TestBase.byXpath("Search_Brand_Xpath").click();
+        System.out.println("Search Brand");
+        Thread.sleep(20000);
+
+
+        //Choice Component Brand
+        TestBase.byXpath("Brand_Choice_Xpath").click();
+        Thread.sleep(15000);
+        System.out.println("Choice Component Brand");
+
+
+
+
+        //Zone droupdown
+        TestBase.byXpath("Zone_Xpath").click();
+        System.out.println("Zone droupdown");
         Thread.sleep(5000);
 
         System.out.println("Scroll hit");
@@ -83,39 +105,26 @@ public class RXER_Profile_Age extends TestBase {
         System.out.println("Scroll");
         Thread.sleep(5000);
 
-        //Search Brand
-        TestBase.byXpath("Search_Brand_Xpath").click();
-        Thread.sleep(5000);
-        System.out.println("Search Brand");
-
-        //Choice Brand
-        TestBase.byXpath("Brand_Choice_Xpath").click();
-        Thread.sleep(3000);
-        System.out.println("Brand_Choice_Xpath");
-
-        //Close Brand
-        TestBase.byXpath("QTR_Xpath").click();
-        Thread.sleep(5000);
-        System.out.println("Close Brand");
-
-        //Zone droupdown
-        TestBase.byXpath("Zone_Xpath").click();
-        System.out.println("Zone droupdown");
-        Thread.sleep(3000);
         //Choice value
-        TestBase.byXpath("North_Xpath").click();
+        TestBase.byXpath("All_Zone_Xpath").click();
         System.out.println("Choice value");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
         // Close Zone
         TestBase.byXpath("Zone_Xpath").click();
         System.out.println("Close Zone");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
+
+
+        //Divisible_BY
+        Select divisible = new Select(TestBase.byXpath("Divisible_BY"));
+        divisible.selectByVisibleText("1");
+        Thread.sleep(10000);
 
         //Generate Report Button Click
         TestBase.byXpath("Generate_Report_Xpath").click();
         System.out.println("Generate Report Button Click");
-        Thread.sleep(15000);
+        Thread.sleep(35000);
 
         System.out.println("Scroll hit");
         WebElement element1 = TestBase.byXpath("Chart_View");

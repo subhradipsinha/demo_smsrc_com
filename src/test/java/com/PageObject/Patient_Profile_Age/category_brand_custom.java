@@ -21,13 +21,36 @@ public class category_brand_custom extends TestBase {
     @Test
     public void brand_custom()throws Exception{
 
+        Thread.sleep(10000);
+        TestBase.byXpath("Patient_Profile_Age_Xpath").click();
         Thread.sleep(5000);
-        // Clear all
-        TestBase.byXpath("Clear_all_xpath").click();
-        Thread.sleep(5000);
+        System.out.println("Patient_Profile_Age_Xpath click");
 
+        TestBase.byXpath("Patient_Profile_Age_Categry>Brnd_(C)").click();
+        Thread.sleep(2000);
+        System.out.println("Patient_Profile_Age_Xpath click");
+        Thread.sleep(8000);
+
+        Thread.sleep(5000);
+        TestBase.byXpath("Custom").click();
+        Thread.sleep(15000);
+
+        Boolean Accept = driver.findElements(By.xpath("AcceptUpdate")).size()>0;
+        System.out.println(Accept);
+        if(Accept == true){
+            TestBase.byXpath("AcceptUpdate").click();
+            Thread.sleep(10000);
+            System.out.println("Update Format");
+
+        }
+        else {TestBase.byXpath("Clear_all_xpath").click();
+        Thread.sleep(5000);
+        System.out.println("Clearall button click");
+        }
+        Thread.sleep(5000);
         //Speciality choice
         TestBase.byXpath("Speciality").click();
+        System.out.println("Speciality choice");
         Thread.sleep(2000);
         //Choice component
         TestBase.byXpath("CHEST").click();
@@ -51,13 +74,13 @@ public class category_brand_custom extends TestBase {
         //Selection Year  droupdown click
         TestBase.byXpath("Selected_Year_Xpath").click();
         System.out.println("Selection Period droupdown box click");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
 
         //Year Choice
         TestBase.byXpath("Mar_June_2019").click();
         System.out.println("Year Choice");
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
 
         //Close Year  droupdown click
@@ -68,7 +91,7 @@ public class category_brand_custom extends TestBase {
         //Category Droupdown click
         TestBase.byXpath("Category_Xpath").click();
         System.out.println("Category Droupdown click");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
 
         //Category_choice
         TestBase.byXpath("Category_choice_xpath").click();
@@ -81,74 +104,14 @@ public class category_brand_custom extends TestBase {
         Thread.sleep(10000);
 
 
-        //Filter Brand Button Click
-        TestBase.byXpath("Filter_Brand_Xpath").click();
-        System.out.println("Filter Brand Button click");
-        Thread.sleep(10000);
-
-        System.out.println("Scroll hit");
-        WebElement element = TestBase.byXpath("Generate_Report_Xpath");
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
-        System.out.println("Scroll");
-        Thread.sleep(10000);
-
-        //Molecule Droupdownbox
-        TestBase.byXpath("Molecule_Droupdown_box").click();
-        System.out.println("Molecule Droupdownbox");
-        Thread.sleep(5000);
-
-        // Choice Molecule
-        TestBase.byXpath("Choice_Molecule").click();
-        System.out.println("Choice Molecule");
-        Thread.sleep(5000);
-        //Close Molecule Droupdownbox
-        TestBase.byXpath("Molecule_Droupdown_box").click();
-        System.out.println("Close Molecule Droupdownbox");
-        Thread.sleep(5000);
-
-        //Brand Button Click
-        TestBase.byXpath("Brand_Button_Click").click();
-        Thread.sleep(2000);
-        System.out.println("Brand Button Click");
-
-        //Brand Droupdown click
-        TestBase.byXpath("Brand_droupdown_xpath").click();
-        Thread.sleep(3000);
-        System.out.println("Brand Droupdown click");
-
-        //Choice Brand
-        TestBase.byXpath("Choise_Brand").click();
-        Thread.sleep(5000);
-        System.out.println("Choice Brand");
-
-        //Close Brand
-        TestBase.byXpath("Brand_droupdown_xpath").click();
-        System.out.println("Close Brand_droupdown_xpath");
-        Thread.sleep(15000);
-
-        //Zone droupdown
-        TestBase.byXpath("Zone_Xpath").click();
-        System.out.println("Zone droupdown");
-        Thread.sleep(5000);
-
-        //Choice value
-        TestBase.byXpath("North_Xpath").click();
-        System.out.println("Choice value");
-        Thread.sleep(5000);
-
-        // Close Zone
-        TestBase.byXpath("Zone_Xpath").click();
-        System.out.println("Close Zone");
-        Thread.sleep(5000);
-
         //Custom Age Group TextBox
         TestBase.byXpath("From_Xpath").sendKeys(TestData.getProperty("From_Value"));
         System.out.println("Custom Age From TextBox");
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         TestBase.byXpath("To_Xpath").sendKeys(TestData.getProperty("To_Value"));
         System.out.println("Custom Age TO TextBox");
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         //Generate Report Button Click
         TestBase.byXpath("Generate_Report_Xpath").click();
@@ -156,7 +119,7 @@ public class category_brand_custom extends TestBase {
         Thread.sleep(15000);
 
         System.out.println("Scroll hit");
-        WebElement element1 = TestBase.byXpath("Chart_View");
+        WebElement element1 = TestBase.byXpath("SPR");
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element1);
         System.out.println("Scroll");
         Thread.sleep(5000);
@@ -166,7 +129,10 @@ public class category_brand_custom extends TestBase {
         //Save button Click
         TestBase.byXpath("Save_Logo").click();
         System.out.println("Save button Click");
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+        driver.navigate().refresh();
+        Thread.sleep(15000);
+
 
 
     }

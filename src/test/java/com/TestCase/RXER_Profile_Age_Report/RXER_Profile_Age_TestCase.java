@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class RXER_Profile_Age_TestCase {
     RXER_Profile_Age rxer_profile_age = new RXER_Profile_Age();
 
-    @Test(priority = 10)
+    @Test(priority = 15)
     public void details()throws Exception{
         rxer_profile_age.RXER_Profile_Age_Details();
         rxer_profile_age.RXER_Profile_Age_From();

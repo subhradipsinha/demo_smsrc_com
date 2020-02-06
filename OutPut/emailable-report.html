@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">SMSRC</th></tr>
-<tr><td><a href="#t0">SMSRC_TestCase1</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">4</td><td class="num">246,722</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SMSRC_TestCase1</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">3</td><td class="num">285,592</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SMSRC</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SMSRC_TestCase1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.TestCase.Login.Login_TestCase</td><td><a href="#m0">Without_Password</a></td><td rowspan="1">1579272660342</td><td rowspan="1">12047</td></tr><tr class="failedeven"><td><a href="#m1">Without_UserName</a></td><td rowspan="1">1579272672396</td><td rowspan="1">16900</td></tr><tr class="failedodd"><td rowspan="1">com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase</td><td><a href="#m2">details</a></td><td rowspan="1">1579272881063</td><td rowspan="1">6130</td></tr><tr class="failedeven"><td rowspan="1">com.TestCase.Rpm_Report.Rpm_TestCase</td><td><a href="#m3">details</a></td><td rowspan="1">1579272887198</td><td rowspan="1">6093</td></tr><tr><th colspan="4">SMSRC_TestCase1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TestCase.Categry_Mol.Categry_Mol_S_TestCase</td><td><a href="#m4">Categry_Mol</a></td><td rowspan="1">1579272761587</td><td rowspan="1">119471</td></tr><tr class="passedodd"><td rowspan="2">com.TestCase.Login.Login_TestCase</td><td><a href="#m5">Url_Hit</a></td><td rowspan="1">1579272646607</td><td rowspan="1">13733</td></tr><tr class="passedodd"><td><a href="#m6">With_Username_Password</a></td><td rowspan="1">1579272689301</td><td rowspan="1">27312</td></tr><tr class="passedeven"><td rowspan="1">com.TestCase.Sidepanel.Sidepanel_TestCase</td><td><a href="#m7">Details</a></td><td rowspan="1">1579272716614</td><td rowspan="1">44972</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SMSRC</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SMSRC_TestCase1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.TestCase.Login.Login_TestCase</td><td><a href="#m0">Without_Password</a></td><td rowspan="1">1580954357561</td><td rowspan="1">14727</td></tr><tr class="failedeven"><td><a href="#m1">Without_UserName</a></td><td rowspan="1">1580954372294</td><td rowspan="1">22292</td></tr><tr class="failedodd"><td rowspan="1">com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase</td><td><a href="#m2">details</a></td><td rowspan="1">1580954441587</td><td rowspan="1">179294</td></tr><tr><th colspan="4">SMSRC_TestCase1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.TestCase.Login.Login_TestCase</td><td><a href="#m3">Url_Hit</a></td><td rowspan="1">1580954335345</td><td rowspan="1">22213</td></tr><tr class="passedeven"><td><a href="#m4">With_Username_Password</a></td><td rowspan="1">1580954394588</td><td rowspan="1">46999</td></tr></tbody>
 </table>
 <h2>SMSRC_TestCase1</h2><h3 id="m0">com.TestCase.Login.Login_TestCase#Without_Password</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: WithOut Password Successfully login...== expected [true] but found [false]
 	at com.PageObject.LoginPage.Login.UserName(Login.java:58)
@@ -25,49 +25,14 @@
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
 ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase#details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-bold ng-binding&quot;&gt;...&lt;/span&gt; is not clickable at point (62, 79). Other element would receive the click: &lt;img src=&quot;/images/left-sidebar-logo.png&quot;&gt;
-  (Session info: chrome=79.0.3945.117)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.11.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61140}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fefea7f07d957e4f2a0d5b686cc5c78
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.PageObject.RXER_Profile_Age.RXER_Profile_Age.RXER_Profile_Age_Details(RXER_Profile_Age.java:17)
-	at com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase.details(RXER_Profile_Age_TestCase.java:11)
+<h3 id="m2">com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase#details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoSuchMethodError: org.openqa.selenium.WebElement.setSelected()V
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:111)
+	at com.PageObject.RXER_Profile_Age.RXER_Profile_Age.RXER_Profile_Age_From(RXER_Profile_Age.java:121)
+	at com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase.details(RXER_Profile_Age_TestCase.java:12)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.TestCase.Rpm_Report.Rpm_TestCase#details</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;text-bold ng-binding&quot;&gt;...&lt;/span&gt; is not clickable at point (62, 79). Other element would receive the click: &lt;img src=&quot;/images/left-sidebar-logo.png&quot;&gt;
-  (Session info: chrome=79.0.3945.117)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.11.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.117, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61140}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5fefea7f07d957e4f2a0d5b686cc5c78
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.PageObject.RPM.Rpm.Rpm_Tab_Click(Rpm.java:23)
-	at com.TestCase.Rpm_Report.Rpm_TestCase.details(Rpm_TestCase.java:10)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.TestCase.Categry_Mol.Categry_Mol_S_TestCase#Categry_Mol</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.TestCase.Login.Login_TestCase#Url_Hit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.TestCase.Login.Login_TestCase#With_Username_Password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.TestCase.Sidepanel.Sidepanel_TestCase#Details</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.TestCase.Login.Login_TestCase#Url_Hit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.TestCase.Login.Login_TestCase#With_Username_Password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

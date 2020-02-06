@@ -9,7 +9,7 @@ public class Sidepanel_Report extends TestBase {
     public void Report_Sidepanel()throws Exception{
         Thread.sleep(5000);
         //SPR HIT SIDE PANEL
-        TestBase.byXpath("SPR_Xpath").click();
+        TestBase.byXpath("SPR").click();
         System.out.println("SPR SIDE PANEL");
         Thread.sleep(3000);
     }

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test thread-count="5" name="demo_smrc_com(failed)">
     <classes>
-      <class name="com.TestCase.Sidepanel.Sidepanel_TestCase">
+      <class name="com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1">
         <methods>
-          <include name="Details"/>
+          <include name="Categry_Mol"/>
         </methods>
-      </class> <!-- com.TestCase.Sidepanel.Sidepanel_TestCase -->
+      </class> <!-- com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1 -->
     </classes>
   </test> <!-- demo_smrc_com(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
