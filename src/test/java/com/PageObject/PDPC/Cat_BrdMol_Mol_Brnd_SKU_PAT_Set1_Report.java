@@ -138,11 +138,10 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
         Thread.sleep(5000);
         System.out.println("Brand Droupdown Click");
         // Brand component choice
-        TestBase.byXpath("Brand_Component").click();
-        Thread.sleep(5000);
-        TestBase.byXpath("Brand_Component_2").click();
+        TestBase.byXpath("Priority_component_choice").click();
         Thread.sleep(5000);
         System.out.println("Brand_Component");
+
         //Close Droupdown
         TestBase.byXpath("Brand_Xpath").click();
         Thread.sleep(5000);
@@ -187,16 +186,16 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
         Thread.sleep(5000);
 
         //Zone droupdown
-        TestBase.byXpath("Zone_Xpath").click();
+        TestBase.byXpath("Dosage_And_Duration_Zone_Xpath").click();
         System.out.println("Zone droupdown");
         Thread.sleep(5000);
         //Choice value
-        TestBase.byXpath("All_Zone_Xpath").click();
+        TestBase.byXpath("Dosage_And_Duration_All_Zone_Xpath").click();
         System.out.println("Choice value");
         Thread.sleep(10000);
 
         // Close Zone
-        TestBase.byXpath("Zone_Xpath").click();
+        TestBase.byXpath("Dosage_And_Duration_Zone_Xpath").click();
         System.out.println("Close Zone");
         Thread.sleep(5000);
 

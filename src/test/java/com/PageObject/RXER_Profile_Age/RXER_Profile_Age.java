@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import javax.xml.bind.SchemaOutputResolver;
+
 public class RXER_Profile_Age extends TestBase {
     @Test
     public void RXER_Profile_Age_Details() throws Exception {
@@ -35,8 +37,18 @@ public class RXER_Profile_Age extends TestBase {
 
     @Test
     public void RXER_Profile_Age_From() throws Exception {
-        // Clear all
-        TestBase.byXpath("Clear_all_xpath").click();
+        Boolean Accept = driver.findElements(By.xpath("AcceptUpdate")).size()>0;
+        System.out.println(Accept);
+        if(Accept == true){
+            TestBase.byXpath("AcceptUpdate").click();
+            Thread.sleep(10000);
+            System.out.println("Update Format");
+
+        }
+        else {TestBase.byXpath("Clear_all_xpath").click();
+            Thread.sleep(5000);
+            System.out.println("Clearall button click");
+        }
         Thread.sleep(5000);
 
         //Speciality choice
@@ -113,13 +125,23 @@ public class RXER_Profile_Age extends TestBase {
         // Close Zone
         TestBase.byXpath("Zone_Xpath").click();
         System.out.println("Close Zone");
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 
 
         //Divisible_BY
-        Select divisible = new Select(TestBase.byXpath("Divisible_BY"));
-        divisible.selectByVisibleText("1");
-        Thread.sleep(10000);
+        TestBase.byXpath("Divisible_BY").click();
+        System.out.println("Divisible_BY droupdown");
+        Thread.sleep(3000);
+
+        //Choice Divisible_BY value
+        TestBase.byXpath("Component_choice_Divisible").click();
+        System.out.println("Choice Divisible_BY value");
+        Thread.sleep(5000);
+
+        //Close Divisible_BY
+        TestBase.byXpath("Divisible_BY").click();
+        System.out.println("Close Divisible_BY droupdown");
+        Thread.sleep(5000);
 
         //Generate Report Button Click
         TestBase.byXpath("Generate_Report_Xpath").click();
@@ -127,7 +149,7 @@ public class RXER_Profile_Age extends TestBase {
         Thread.sleep(35000);
 
         System.out.println("Scroll hit");
-        WebElement element1 = TestBase.byXpath("Chart_View");
+        WebElement element1 = TestBase.byXpath("SPR");
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element1);
         System.out.println("Scroll");
         Thread.sleep(5000);
@@ -138,5 +160,7 @@ public class RXER_Profile_Age extends TestBase {
         TestBase.byXpath("Save_Logo").click();
         System.out.println("Save button Click");
         Thread.sleep(5000);
+        driver.navigate().refresh();
+        Thread.sleep(15000);
     }
 }
