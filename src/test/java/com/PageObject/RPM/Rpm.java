@@ -107,8 +107,7 @@ public class Rpm extends TestBase {
         //Filter Division Button click
         TestBase.byXpath("Filter_Molecule_Xpath").click();
         System.out.println("Filter Division Button click");
-        Thread.sleep(15000);
-
+        Thread.sleep(35000);
 
 
 
@@ -141,17 +140,18 @@ public class Rpm extends TestBase {
         Thread.sleep(5000);
 
         // Priority Droupdown Box
-        TestBase.byXpath("Brand_Xpath").click();
+        TestBase.byXpath("Brand_Droupdown_xpath").click();
         System.out.println("Priority Droupdown Box");
         Thread.sleep(5000);
 
         // Priority component choice
-        TestBase.byXpath("Priority_component_choice").click();
+        TestBase.byXpath("Brand_Component").click();
+        TestBase.byXpath("Brand_Component_2").click();
         System.out.println("Priority component choice");
         Thread.sleep(15000);
 
         // Close Priority Droupdown Box
-        TestBase.byXpath("Brand_Xpath").click();
+        TestBase.byXpath("Brand_Droupdown_xpath").click();
         System.out.println("Close Priority Droupdown Box");
         Thread.sleep(5000);
 
@@ -161,17 +161,17 @@ public class Rpm extends TestBase {
         Thread.sleep(15000);
 
         //Brand Droupdown Box
-        TestBase.byXpath("Strength_Droupdown").click();
+        TestBase.byXpath("Brand_Droupdown_xpath").click();
         System.out.println("Brand Droupdown Box");
         Thread.sleep(5000);
 
         // Brand Component Choice
-        TestBase.byXpath("Brand_Component_Choice").click();
+        TestBase.byXpath("Priority_component_choice").click();
         System.out.println("Brand Component Choice");
         Thread.sleep(5000);
 
         //Close Brand Droupdown Box
-        TestBase.byXpath("Strength_Droupdown").click();
+        TestBase.byXpath("Brand_Droupdown_xpath").click();
         System.out.println("Close Brand Droupdown Box");
         Thread.sleep(5000);
 

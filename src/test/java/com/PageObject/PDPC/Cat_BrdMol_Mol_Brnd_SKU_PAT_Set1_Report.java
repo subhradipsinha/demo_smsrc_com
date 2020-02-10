@@ -48,7 +48,7 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
         //Choice component
         TestBase.byXpath("CHEST").click();
         System.out.println("CHEST click");
-        Thread.sleep(15000);
+        Thread.sleep(25000);
 
 
         //Close_Speciality_window
@@ -73,7 +73,7 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
         //Qtr Choice
         TestBase.byXpath("Mar_June_2019").click();
         System.out.println("Qtr Choice");
-        Thread.sleep(10000);
+        Thread.sleep(15000);
 
 
         //Close Year  droupdown click
@@ -100,7 +100,7 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
         //Filter Molecule Click
         TestBase.byXpath("Filter_Molecule_Xpath").click();
         System.out.println("Filter Molecule Button click");
-        Thread.sleep(5000);
+        Thread.sleep(25000);
 
 
 
@@ -130,7 +130,7 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
 
         // Filter Brand Button Click
         TestBase.byXpath("Filter_Brand_Xpath").click();
-        Thread.sleep(5000);
+        Thread.sleep(25000);
         System.out.println("Filter Brand Button Click");
 
         // Brand Droupdown Click
@@ -149,68 +149,57 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
 
         // Filter Strength
         TestBase.byXpath("Filter_Strength").click();
-        Thread.sleep(5000);
+        Thread.sleep(25000);
         System.out.println("Filter_Strength Button click");
 
         //Strength Droupdown box
         TestBase.byXpath("Strength_Droupdown").click();
         Thread.sleep(5000);
-        System.out.println("Strength_Droupdown Button Click");
+        System.out.println("Strength_Droupdown Click");
         //Strength component Choice
         TestBase.byXpath("Strength_component").click();
         System.out.println("Strength component Choice");
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         //Close Strength Droupdown
         TestBase.byXpath("Strength_Droupdown").click();
         System.out.println("Close Strength Droupdown");
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         //Filter PdSet1 Button click
         TestBase.byXpath("Filter_PdSet1_Button").click();
         System.out.println("Filter_PdSet1_Button_click");
-        Thread.sleep(10000);
+        Thread.sleep(25000);
 
         //PdSet1 Droupdown click
-        TestBase.byXpath("PdSet1_Droupdown").click();
+        TestBase.byXpath("Strength_Droupdown").click();
         System.out.println("PdSet1 Droupdown click");
         Thread.sleep(5000);
         //PdSet1 component
-        TestBase.byXpath("PdSet1_component").click();
-        TestBase.byXpath("PdSet1_component1").click();
-        TestBase.byXpath("PdSet1_component2").click();
+        TestBase.byXpath("Strength_component").click();
         System.out.println("PdSet1 component");
         Thread.sleep(10000);
         // Close PdSet1 Droupdown click
-        TestBase.byXpath("PdSet1_Droupdown").click();
+        TestBase.byXpath("Strength_Droupdown").click();
         System.out.println("Close PdSet1 Droupdown click");
-        Thread.sleep(5000);
+        Thread.sleep(15000);
 
         //Zone droupdown
-        TestBase.byXpath("Dosage_And_Duration_Zone_Xpath").click();
+        TestBase.byXpath("PdPc_Zone_droupdown").click();
         System.out.println("Zone droupdown");
         Thread.sleep(5000);
         //Choice value
-        TestBase.byXpath("Dosage_And_Duration_All_Zone_Xpath").click();
+        TestBase.byXpath("PdPc_AllZone").click();
         System.out.println("Choice value");
         Thread.sleep(10000);
 
         // Close Zone
-        TestBase.byXpath("Dosage_And_Duration_Zone_Xpath").click();
+        TestBase.byXpath("PdPc_Zone_droupdown").click();
         System.out.println("Close Zone");
-        Thread.sleep(5000);
-
-        //Custom Age Group TextBox
-        TestBase.byXpath("From_Xpath").sendKeys(TestData.getProperty("From_Value"));
-        System.out.println("Custom Age From TextBox");
-        Thread.sleep(5000);
-
-        TestBase.byXpath("To_Xpath").sendKeys(TestData.getProperty("To_Value"));
-        System.out.println("Custom Age TO TextBox");
         Thread.sleep(5000);
 
 
         //Generate Report Button Click
-        TestBase.byXpath("Generate_Report_Xpath").click();
+        TestBase.byXpath("Pdpc_Generate_report").click();
         System.out.println("Generate Report Button Click");
         Thread.sleep(25000);
 
@@ -225,7 +214,7 @@ public class Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1_Report extends TestBase {
         //Save button Click
         TestBase.byXpath("Save_Logo").click();
         System.out.println("Save button Click");
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         driver.navigate().refresh();
         Thread.sleep(15000);
 

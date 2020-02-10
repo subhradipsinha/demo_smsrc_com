@@ -3,57 +3,51 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SMSRC]">
   <test thread-count="5" name="SMSRC_TestCase1(failed)">
     <classes>
-      <class name="com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase">
-        <methods>
-          <include name="details"/>
-        </methods>
-      </class> <!-- com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase -->
-      <class name="com.TestCase.Product_1_2_Report.Category_Company_Division_Report">
-        <methods>
-          <include name="Details"/>
-        </methods>
-      </class> <!-- com.TestCase.Product_1_2_Report.Category_Company_Division_Report -->
-      <class name="com.TestCase.Dosage_And_Duration_Report.Category_Molecule_Brand_Strength_Report">
-        <methods>
-          <include name="Category_Molecule_Brand_Strength_Details"/>
-        </methods>
-      </class> <!-- com.TestCase.Dosage_And_Duration_Report.Category_Molecule_Brand_Strength_Report -->
-      <class name="com.TestCase.Trends_Report.Trend_Contibution_category_molecule_brand_Report">
-        <methods>
-          <include name="Trend_Contibution_category_molecule_brand_Details"/>
-        </methods>
-      </class> <!-- com.TestCase.Trends_Report.Trend_Contibution_category_molecule_brand_Report -->
       <class name="com.TestCase.Rpm_Report.Rpm_TestCase">
         <methods>
           <include name="details"/>
         </methods>
       </class> <!-- com.TestCase.Rpm_Report.Rpm_TestCase -->
-      <class name="com.TestCase.All_co_Rx_Report.Category_to_Category_Report">
-        <methods>
-          <include name="Category_to_Category_Details"/>
-        </methods>
-      </class> <!-- com.TestCase.All_co_Rx_Report.Category_to_Category_Report -->
-      <class name="com.TestCase.Login.Login_TestCase">
-        <methods>
-          <include name="Without_Password"/>
-          <include name="Without_UserName"/>
-        </methods>
-      </class> <!-- com.TestCase.Login.Login_TestCase -->
-      <class name="com.TestCase.Core_Analysis.Top20_Brand_To_Brand_Report">
-        <methods>
-          <include name="Top20_Brand_To_Brand_Details"/>
-        </methods>
-      </class> <!-- com.TestCase.Core_Analysis.Top20_Brand_To_Brand_Report -->
-      <class name="com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1">
-        <methods>
-          <include name="Categry_Mol"/>
-        </methods>
-      </class> <!-- com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1 -->
       <class name="com.TestCase.Base_Per_Capita_Report.Category_Brand_to_Brand_Report">
         <methods>
           <include name="Details"/>
         </methods>
       </class> <!-- com.TestCase.Base_Per_Capita_Report.Category_Brand_to_Brand_Report -->
+      <class name="com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase">
+        <methods>
+          <include name="details"/>
+        </methods>
+      </class> <!-- com.TestCase.RXER_Profile_Age_Report.RXER_Profile_Age_TestCase -->
+      <class name="com.TestCase.Dosage_And_Duration_Report.Category_Molecule_Brand_Strength_Report">
+        <methods>
+          <include name="Category_Molecule_Brand_Strength_Details"/>
+        </methods>
+      </class> <!-- com.TestCase.Dosage_And_Duration_Report.Category_Molecule_Brand_Strength_Report -->
+      <class name="com.TestCase.Core_Analysis.Top20_Brand_To_Brand_Report">
+        <methods>
+          <include name="Top20_Brand_To_Brand_Details"/>
+        </methods>
+      </class> <!-- com.TestCase.Core_Analysis.Top20_Brand_To_Brand_Report -->
+      <class name="com.TestCase.Trends_Report.Trend_Contibution_category_molecule_brand_Report">
+        <methods>
+          <include name="Trend_Contibution_category_molecule_brand_Details"/>
+        </methods>
+      </class> <!-- com.TestCase.Trends_Report.Trend_Contibution_category_molecule_brand_Report -->
+      <class name="com.TestCase.Product_1_2_Report.Category_Company_Division_Report">
+        <methods>
+          <include name="Details"/>
+        </methods>
+      </class> <!-- com.TestCase.Product_1_2_Report.Category_Company_Division_Report -->
+      <class name="com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1">
+        <methods>
+          <include name="Categry_Mol"/>
+        </methods>
+      </class> <!-- com.TestCase.PDPC_Report.PDPC_Cat_BrdMol_Mol_Brnd_SKU_PAT_Set1 -->
+      <class name="com.TestCase.All_co_Rx_Report.Category_to_Category_Report">
+        <methods>
+          <include name="Category_to_Category_Details"/>
+        </methods>
+      </class> <!-- com.TestCase.All_co_Rx_Report.Category_to_Category_Report -->
     </classes>
   </test> <!-- SMSRC_TestCase1(failed) -->
 </suite> <!-- Failed suite [SMSRC] -->

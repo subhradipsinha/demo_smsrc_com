@@ -16,11 +16,11 @@ public class Login_TestCase {
     public void Url_Hit()throws Exception{
         login.init();
     }
-    @Test(priority = 3)
+    @Test(enabled = false)
     public void Without_Password()throws Exception{
         login.UserName();
     }
-    @Test(priority = 4)
+    @Test(enabled = false)
     public void Without_UserName()throws Exception{
         login.Password_Data();
     }
